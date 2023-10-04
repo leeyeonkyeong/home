@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 등록</title>
+</head>
+<body>
+    <h1>취업 정보 계정 만들기</h1>
+    <h3>* 필수 입력 항목</h3>
+    <h3>기본 정보</h3>
+    <form>
+        <label for="name">이 름*</label>
+        <input type="text" id="name" name="name" size="8" required><br>
+        <label for="email">이메일*</label>
+        <input type="email" id="email" name="email"  size="15" placeholder="id@domain_name" required><br>
+
+        <label for="password">암호*</label>
+        <input type="password" id="password" name="password" size="12" required><br>
+
+        <label for="confirm_password">암호 확인*</label>
+        <input type="password" id="confirm_password" name="confirm_password" size="12" required><br>
+
+        <label for="mobile">모바일 폰*</label>
+        <input type="tel" id="mobile" name="mobile" size="13" placeholder="010-0000-0000" required><br>
+
+        <label for="homepage">개인 홈페이지*</label>
+        <input type="url" id="homepage" name="homepage" size="30" placeholder="http://" required><br>
+
+        <label for="address">주소*</label>
+        <input type="address" id="address" name="address" size="30" required></input><br>
+
+        <h4>학 력</h4>
+
+        <label for="school_name">학교 명*</label>
+        <input type="text" id="school_name" name="school_name" size="12" required><br>
+
+        <label for="major">전 공*</label>
+        <input type="text" id="major" name="major" size="12" required><br>
+
+        <label for="graduation_status">졸업 여부*</label>
+        <select id="graduation_status" name="graduation_status" required>
+            <option value="">---선택---</option>
+            <option value="졸업예정">졸업예정</option>
+            <option value="졸업">졸업</option>
+        </select><br>
+
+        <label for="graduation_date">졸업(예정)일:</label>
+        <input type="date" id="graduation_date" name="graduation_date" required><br>
+
+        <h4>업무 경력</h4>
+
+        <label for="workplace">근무업체명</label>
+        <input type="text" id="workplace" name="workplace" size="20" required><br>
+
+        <label for="position">직위</label>
+        <input type="text" id="position" name="position" size="10" required><br>
+
+        <label for="responsibilities">담당 업무</label><br>
+        <textarea id="responsibilities" name="responsibilities" rows="10" cols="80" placeholder="이전 업체에서 담당한 업무를 기술하시오." required></textarea><br>
+
+        <label for="work_years">근무년수</label>
+        <input type="number" id="work_years" name="work_years" min="0" max="10" step="0.5" required>년<br>
+
+        <h4>자기소개서</h4>
+
+        <label for="attachment">첨부 파일</label>
+        <input type="file" id="attachment" name="attachment"><br>
+
+        <input type="submit" value="제출">
+        <input type="reset" value="재작성">
+    </form>
+</body>
+</html>

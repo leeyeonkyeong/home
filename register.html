@@ -15,14 +15,14 @@
             width: 800px;
             padding-left: 10px;
         }
-        div {
+        label {
             margin-left: 8px;
             text-align: right;
             width: 130px;
             padding_right: 8px;
             display: inline-block;
         }
-        div span {
+        label span {
             color: red;
         }
         .sub {
@@ -42,61 +42,61 @@
     <h3>* 필수 입력 항목</h3>
     <h4 class="subtitle">기본 정보</h4>
     <form>
-        <div for="name">이 름<span>*</span></div>
+        <label for="name">이 름<span>*</span></label>
         <input type="text" id="name" name="name" size="8" required><br>
-        <div for="email">이메일<span>*</span></div>
+        <label for="email">이메일<span>*</span></label>
         <input type="email" id="email" name="email"  size="15" placeholder="id@domain_name" required><br>
 
-        <div for="password">암호<span>*</span></div>
+        <label for="password">암호<span>*</span></label>
         <input type="password" id="password" name="password" size="12" required><br>
 
-        <div for="confirm_password">암호 확인<span>*</span></div>
+        <label for="confirm_password">암호 확인<span>*</span></label>
         <input type="password" id="confirm_password" name="confirm_password" size="12" required><br>
 
-        <div for="mobile">모바일 폰<span>*</span></div>
+        <label for="mobile">모바일 폰<span>*</span></label>
         <input type="tel" id="mobile" name="mobile" size="13" placeholder="010-0000-0000" required><br>
 
-        <div for="homepage">개인 홈페이지<span>*</span></div>
+        <label for="homepage">개인 홈페이지<span>*</span></label>
         <input type="url" id="homepage" name="homepage" size="30" placeholder="http://" required><br>
 
-        <div for="address">주소<span>*</span></div>
+        <label for="address">주소<span>*</span></label>
         <input type="address" id="address" name="address" size="30" required></input><br>
 
         <h4 class="subtitle">학 력</h4>
 
-        <div for="school_name">학교 명<span>*</span></div>
+        <label for="school_name">학교 명<span>*</span></label>
         <input type="text" id="school_name" name="school_name" size="12" required><br>
 
-        <div for="major">전 공<span>*</span></div>
+        <label for="major">전 공<span>*</span></label>
         <input type="text" id="major" name="major" size="12" required><br>
 
-        <div for="graduation_status">졸업 여부<span>*</span></div>
+        <label for="graduation_status">졸업 여부<span>*</span></label>
         <select id="graduation_status" name="graduation_status" required>
             <option value="">---선택---</option>
             <option value="졸업예정">졸업예정</option>
             <option value="졸업">졸업</option>
         </select><br>
 
-        <div for="graduation_date">졸업(예정)일:</div>
+        <label for="graduation_date">졸업(예정)일:</label>
         <input type="date" id="graduation_date" name="graduation_date" required><br>
 
         <h4 class="subtitle">업무 경력</h4>
 
-        <div for="workplace">근무업체명</div>
+        <label for="workplace">근무업체명</label>
         <input type="text" id="workplace" name="workplace" size="20" required><br>
 
-        <div for="position">직위</div>
+        <label for="position">직위</label>
         <input type="text" id="position" name="position" size="10" required><br>
 
-        <div for="responsibilities">담당 업무</div>
+        <label for="responsibilities">담당 업무</label>
         <textarea id="responsibilities" name="responsibilities" rows="10" cols="80" placeholder="이전 업체에서 담당한 업무를 기술하시오." required></textarea><br>
 
-        <div for="work_years">근무년수</div>
+        <label for="work_years">근무년수</label>
         <input type="number" id="work_years" name="work_years" min="0" max="10" step="0.5" required>년<br>
 
         <h4 class="subtitle">자기소개서</h4>
 
-        <div for="attachment">첨부 파일</div>
+        <label for="attachment">첨부 파일</label>
         <input type="file" id="attachment" name="attachment"><br>
 
         <input class="sub" type="submit" value="제출">

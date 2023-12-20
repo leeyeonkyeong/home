@@ -77,6 +77,8 @@
   --bs-link-hover-color: #974a2d;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
+  --bs-body-text-align: center;
+
 }
 
 *,
